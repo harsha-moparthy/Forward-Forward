@@ -1,0 +1,19 @@
+dataset:
+  path: data
+  batch_size: 100
+network:
+  peer_norm_factor: 0.03
+  momentum: 0.9
+  hidden_size: 1000
+  num_layers: 3
+training:
+  num_epochs: 100
+  lr: 0.001
+  wd: 0.0003
+  optimizer_momentum: 0.9
+  downstream_lr: 0.01
+  downstream_wd: 0.003
+  validation_index: -1
+  final_test: true
+random_seed: 42
+device: cuda
